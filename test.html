@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <Title>test 1</Title>
+
+        <script src="p5.js"></script>
+        <script src="p5.play.js"></script>
+        <script src="p5.dom.min.js"></script>
+        <script src="p5.sound.min.js"></script>
+        <script src="test1.css"></script>
+        
+        <script>
+            var rainbow;
+            var colour;
+            var i;
+            var testingVar;
+
+            function setup(){
+
+                //rainbow defination
+                    rainbow = ["purple","navy","blue","green","yellow","orange","red"];
+
+                //i setup
+                    i = 0;
+
+                    }
+
+
+            function draw(){
+
+            //set the definite frame count
+                frames = 40;
+             
+            //change the colour every second
+                if(frameCount % 40 === 0){
+                    i++
+                }
+                colour = rainbow[i];
+                print(colour);
+            
+            //setting i back to 0
+                if(i >= 7){
+                    i = 0;
+                }
+
+            //linear gradient
+              //work in progress :((
+
+            }
+            
+        </script>
+    </Head>
+
+    <body background= linear>
+
+        <a href="page1.html"><p style="color: linear-gradient(to rigt,purple,navy,blue,green,yellow,orange,red );">click me !</p></a>
+       
+    </body>
+
+</html>
+
